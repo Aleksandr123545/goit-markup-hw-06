@@ -527,6 +527,135 @@ transition: transform 250ms linear; */
 
 /* ========================MOBILE MODAL============================= */
 
+/* ==========heroy section=============== */
+
+.heroy-section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero_image.jpg");
+  background-size: cover;
+  margin: 0 auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+.container-heroy {
+}
+
+.heroy-section-title {
+  max-width: 169px;
+  height: 160px;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+}
+
+.heroy-section-button {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  background-color: #4d5ae5;
+  cursor: pointer;
+
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  margin-top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.heroy-section-button:hover,
+.heroy-section-button:focus {
+  background-color: #404bbf;
+}
+
+/* =================== Studio section ============= */
+
+.section-studio {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.studio-title {
+  color: #2e2f42;
+}
+
+.studio-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding-inline-start: 0;
+}
+
+.studio-icons {
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+}
+
+.logo-icon {
+  display: flex;
+}
+
+.link {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.studio-title-next {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  margin-bottom: 8px;
+}
+
+.studio-text {
+  width: 288px;
+  color: #434455;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 320px;
@@ -555,9 +684,9 @@ transition: transform 250ms linear; */
     display: none;
   }
 
-  .backdrop {
+  /* .backdrop {
     display: none;
-  }
+  } */
 
   .address {
     display: flex;
@@ -636,7 +765,55 @@ transition: transform 250ms linear; */
     /* margin-top: 12px; */
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  /* ===== modal tablet ====== */
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    border-radius: 4px;
+    background: #fcfcfc;
+    padding: 72px 25px 24px 23px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  /* ============= Heroy section ============== */
+
+  .heroy-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  .heroy-section-title {
+    max-width: 496px;
+    height: 120px;
+    color: #ffffff;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: 0.02em;
+    text-align: center;
+    /* text-transform: capitalize; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
+  }
+
+  /* ==================== Studio section ================ */
+  .studio-list {
+    display: flex;
+    max-width: 768px;
+    /* height: auto; */
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    padding-inline-start: 0;
+  }
+  .studio-text {
+    width: 356px;
+  }
 }
+
 /* ===============header-TABLET-style=============== */
 
 /* ===============header-DESKTOP-style=============== */
@@ -653,5 +830,72 @@ transition: transform 250ms linear; */
   .address-list {
     flex-direction: row;
     gap: 40px;
+  }
+
+  /* ============= Heroy section ============== */
+
+  .heroy-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .heroy-section-title {
+    max-width: 496px;
+    height: 120px;
+    color: #ffffff;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: 0.02em;
+    text-align: center;
+    /* text-transform: capitalize; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
+  }
+
+  /* ============ Studio section ================ */
+
+  .studio-list {
+    display: flex;
+    max-width: 1152px;
+    /* height: auto; */
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 24px;
+    padding-inline-start: 0;
+  }
+  .studio-text {
+    width: 264px;
+    font-weight: 400;
+  }
+
+  .studio-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+  }
+
+  .logo-icon {
+    display: flex;
+  }
+
+  .link {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+  .studio-title-next {
+    color: var(--NAVY-BLUE, #2e2f42);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: left;
   }
 }
